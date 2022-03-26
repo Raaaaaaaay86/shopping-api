@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/shopping
+    username: root
+    password: eee333
+    driver-class: com.mysql.cj.jdbc.Driver
