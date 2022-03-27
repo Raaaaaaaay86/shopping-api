@@ -28,6 +28,13 @@ public class OrderDetail {
     @Column(nullable = false, updatable = false, insertable = false)
     Date createAt;
 
+    @CreationTimestamp
+    @Column(nullable = false)
+    Date updateAt;
+
+    @Column(columnDefinition = "boolean default false")
+    Boolean isCanceled;
+
     @Column(columnDefinition = "boolean default false")
     Boolean isPaid;
 
